@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import {Container, DropdownButton, Dropdown} from 'react-bootstrap'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import {PieChart, Pie, Cell, Tooltip} from 'recharts'
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table'
 
 const ChartForm=({setDiagramTypeFunction, data, setData})=>{
@@ -67,8 +64,8 @@ const ChartForm=({setDiagramTypeFunction, data, setData})=>{
     const bootstrapTable=
         <BootstrapTable data={ data } cellEdit={ cellEditProp } insertRow={ true } deleteRow={ true } selectRow={ selectRowProp} options={ options }>
             <TableHeaderColumn dataField='id' width='0' isKey editable={ false } autoValue={ true }>Id</TableHeaderColumn>
-            <TableHeaderColumn dataField='name'>Название</TableHeaderColumn>
-            <TableHeaderColumn dataField='value'>Значение</TableHeaderColumn>
+            <TableHeaderColumn dataField='x'>Название</TableHeaderColumn>
+            <TableHeaderColumn dataField='y'>Значение</TableHeaderColumn>
         </BootstrapTable>
     return(
         <div>
