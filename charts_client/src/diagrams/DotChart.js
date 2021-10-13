@@ -9,12 +9,6 @@ const DotChart=({data, colors, height, dataInfo})=>{
 			data={data}
 			autoFit
 			interactions={['legend-highlight', 'brush']}
-			onGetG2Instance={(c => {
-				chartIns = c;
-				c.on('beforepaint', () => {
-					console.log(c.filteredData)
-				})
-			})}
 		>
 			<Point
 				position="x*y"
