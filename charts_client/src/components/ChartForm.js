@@ -60,6 +60,30 @@ const ChartForm=({setDiagramTypeFunction, data, setData})=>{
                 setTitle('Гистограмма');
                 setDiagramTypeFunction('Гистограмма');
             }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Лепестковая диаграмма');
+                setDiagramTypeFunction('Лепестковая диаграмма');
+            }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Биржевая диаграмма');
+                setDiagramTypeFunction('Биржевая диаграмма');
+            }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Кольцевая диаграмма');
+                setDiagramTypeFunction('Кольцевая диаграмма');
+            }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Точечная диаграмма');
+                setDiagramTypeFunction('Точечная диаграмма');
+            }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Пузырьковая диаграмма');
+                setDiagramTypeFunction('Пузырьковая диаграмма');
+            }}>Гистограмма</Dropdown.Item>
+            <Dropdown.Item onClick={()=>{
+                setTitle('Географическая карта');
+                setDiagramTypeFunction('Географическая карта');
+            }}>Гистограмма</Dropdown.Item>
         </DropdownButton>
     const bootstrapTable=
         <BootstrapTable data={ data } cellEdit={ cellEditProp } insertRow={ true } deleteRow={ true } selectRow={ selectRowProp} options={ options }>
