@@ -20,7 +20,7 @@ export const FinanceChart = ({data, colors, height, dataInfo}) => {
     })
     return (
         <Chart
-            height={400}
+            height={height}
             padding={[10, 40, 40, 40]}
             data={newData}
             autoFit
