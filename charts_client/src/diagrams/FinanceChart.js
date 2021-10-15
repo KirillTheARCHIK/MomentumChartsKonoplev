@@ -14,7 +14,8 @@ export const FinanceChart = ({data, colors, height, dataInfo}) => {
             end: item["end"],
             volumn: item["volumn"],
             money: item["money"],
-            trend: trend
+            trend: trend,
+            range: [item.start, item.end, item.max, item.min]
         })
     })
     return (
