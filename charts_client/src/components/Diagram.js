@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import BarChart from '../diagrams/BarChart';
+import { BubbleChart } from '../diagrams/BubbleChart';
 import DotChart from '../diagrams/DotChart';
+import { FinanceChart } from '../diagrams/FinanceChart';
 import LineChart from '../diagrams/LineChart';
 import { PieChart } from '../diagrams/PieChart';
 import RadarChart from '../diagrams/RadarChart';
+import RingChart from '../diagrams/RingChart';
 
 const Diagram=({data, diagramType, colors, dataInfo, height})=>{
     const[st,setSt]=useState(Math.random())
@@ -29,12 +32,12 @@ const Diagram=({data, diagramType, colors, dataInfo, height})=>{
     }
     if(diagramType=='Биржевая диаграмма'){
         return(
-            <div/>
+            <FinanceChart  data={data} colors={colors} dataInfo={dataInfo} height={height}/>
         );
     }
     if(diagramType=='Кольцевая диаграмма'){
         return(
-            <div/>
+            <RingChart  data={data} colors={colors} dataInfo={dataInfo} height={height}/>
         );
     }
     if(diagramType=='Точечная диаграмма'){
@@ -44,7 +47,7 @@ const Diagram=({data, diagramType, colors, dataInfo, height})=>{
     }
     if(diagramType=='Пузырьковая диаграмма'){
         return(
-            <div/>
+            <BubbleChart data={data} colors={colors} dataInfo={dataInfo} height={height}/>
         );
     }
     if(diagramType=='Географическая карта'){

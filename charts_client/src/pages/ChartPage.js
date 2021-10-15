@@ -8,16 +8,16 @@ import ChartForm from '../components/ChartForm'
 const colors=['#8884d8',"#83a6ed","#8dd1e1","#82ca9d","#a4de6c","#d0ed57"];
 function ChartPage(){
     const[dataInfo, setDataInfo]=useState(
-        {id: 1, xAxisName: 'year', yAxisName: 'value'}
+        {id: 1, xAxisName: 'year', yAxisName: 'value', zAxisName: 'zValue'}
     )
     const [data, setData]=useState([
-        {id: 1, x: '1991', y: 3},
-        {id: 2, x: '1992', y: 4},
-        {id: 3, x: '1993', y: 3.5},
-        {id: 4, x: '1994', y: 5},
-        {id: 5, x: '1995', y: 7},
-        {id: 6, x: '1996', y: 4},
-        {id: 7, x: '1997', y: 5},
+        {id: 1, x: '1991', y: 3, z: 10},
+        {id: 2, x: '1992', y: 4, z: 30},
+        {id: 3, x: '1993', y: 3.5, z: 20},
+        {id: 4, x: '1994', y: 5, z: 10},
+        {id: 5, x: '1995', y: 7, z: 10},
+        {id: 6, x: '1996', y: 4, z: 10},
+        {id: 7, x: '1997', y: 5, z: 10},
     ])
     const height=500;
     const [diagramType, setDiagramType]=useState('Линейный график')
